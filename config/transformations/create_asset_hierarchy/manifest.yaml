@@ -2,13 +2,9 @@
 # Manifest file downloaded from fusion
 externalId: tr-create_asset_hierarchy
 name: create_asset_hierarchy
-query: >-
-    /* MAPPING_MODE_ENABLED: false */
-    /* {"version":1,"sourceType":"raw","mappings":[{"from":"","to":"externalId","asType":"STRING"},{"from":"","to":"parentExternalId","asType":"STRING"},{"from":"","to":"source","asType":"STRING"},{"from":"","to":"name","asType":"STRING"},{"from":"","to":"description","asType":"STRING"},{"from":"","to":"metadata","asType":"MAP<STRING,
-    STRING>"},{"from":"","to":"dataSetId","asType":"BIGINT"},{"from":"","to":"labels","asType":"ARRAY<STRING>"}]} */
+query:
+    file: transformation.sql
 
-    query:
-        file: transformation.sql
 destination:
     type: asset_hierarchy
 ignoreNullFields: true
