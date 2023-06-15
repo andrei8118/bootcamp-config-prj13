@@ -9,6 +9,7 @@ query: >-
 
     query:
         file: transformation.sql
+  
 destination:
     type: asset_hierarchy
 ignoreNullFields: true
